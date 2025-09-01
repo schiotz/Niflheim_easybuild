@@ -24,6 +24,11 @@ and check that ``module: libfabric/2.0.0-GCCcore-14.2.0`` is found in a ``.eb`` 
 
 The repository contains ``.eb`` files with local modifications, and ``.diff`` files highlighting the local modifications to make it easier to port these modifications to later versions.
 
-### libfabric-2.0.0-GCCcore-14.2.0.eb
+### libfabric-2.0.0-GCCcore-14.2.0.eb (foss/2025a toolchain)
 
 Disables building with ``libefa.so``,  the library supporting Amazon's Elastic Fabric communication which is not relevant on Nilfheim.  Linking with this library causes issues on the nodes with Mellanox drivers installed, as the library is absent there.
+
+### libfabric-2.1.0-GCCcore-14.3.0.eb (foss/2025b toolchain)
+
+Same as above, but for 2025b.
+

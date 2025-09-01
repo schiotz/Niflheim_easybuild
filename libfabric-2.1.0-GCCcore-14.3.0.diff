@@ -1,0 +1,12 @@
+--- /home/niflheim/schiotz/development/easybuild-easyconfigs/easybuild/easyconfigs/l/libfabric/libfabric-2.1.0-GCCcore-14.3.0.eb	2025-07-01 12:50:43.430210476 +0200
++++ libfabric-2.1.0-GCCcore-14.3.0.eb	2025-09-01 19:20:23.092905039 +0200
+@@ -53,6 +53,9 @@
+ # potentially picking up system libraries instead of EasyBuild provided ones at runtime
+ configopts += "--disable-xpmem "
+ 
++# Disable EFA on Niflheim
++configopts += "--disable-efa "
++
+ buildopts = "V=1"
+ 
+ sanity_check_paths = {
