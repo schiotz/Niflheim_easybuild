@@ -15,9 +15,9 @@ export EASYBUILD_ROBOT_PATHS=$HOME/Niflheim_easybuild:
 
 Run the command 
 ```
-eb gompi-2025a.eb -Dr
+eb gompi-2025b.eb -Dr
 ```
-and check that ``module: libfabric/2.0.0-GCCcore-14.2.0`` is found in a ``.eb`` file in this repository, while the rest is found in the main EasyBuild repository.
+and check that ``module: libfabric/2.1.0-GCCcore-14.3.0`` is found in a ``.eb`` file in this repository, while the rest is found in the main EasyBuild repository.
 
 
 ## Files in the repository
